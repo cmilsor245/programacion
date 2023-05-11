@@ -21,9 +21,11 @@
     <form method="post" action="conversacion.jsp">
       <p>Introduce el nombre de los 3 participantes:</p>
 
-      <input id="name-input1" type="text" autofocus name="nombre1" placeholder="Luke Skywalker">
-      <input id="name-input2" type="text" name="nombre1" placeholder="Rey Skywalker">
-      <input id="name-input3" type="text" name="nombre1" placeholder="BB-8">
+      <input type="text" autofocus name="nombre1" placeholder="Luke Skywalker">
+      <input type="text" name="nombre1" placeholder="Rey Skywalker">
+      <input type="text" name="nombre1" placeholder="BB-8">
+
+      <input >
 
       <input type="submit" value="CONFIRMAR">
     </form>
