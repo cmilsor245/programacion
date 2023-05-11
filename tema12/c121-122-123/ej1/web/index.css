@@ -83,7 +83,6 @@ input[type="submit"]:hover{
   background-color: #444;
 }
 
-/* Animaciones */
 input[type="text"], input[type="submit"]{
   transition: all 0.3s ease-in-out;
 }
