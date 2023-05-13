@@ -49,4 +49,36 @@ public class Personajes{
 
       return saludo;
     }
+
+    public String conversacionAleatoria(int opcionConversacion, int identificativo){
+      String conversacionGenerada="";
+
+      switch(opcionConversacion){
+        case 1:
+          switch(identificativo){
+            case 1:
+              
+            break;
+
+            case 2:
+              
+            break;
+
+            case 3: 
+              
+            break;
+          }
+        break;
+
+        case 2:
+          
+        break;
+
+        case 3:
+          
+        break;
+      }
+
+      return conversacionGenerada;
+    }
 }
