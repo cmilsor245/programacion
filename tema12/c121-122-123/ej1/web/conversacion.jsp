@@ -40,7 +40,7 @@
     <div id="personaje2" class="personaje">
       <%
         Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
-        out.print(personaje2.toString(request.getParameter("saludo")));
+        out.print(personaje2.toString(request.getParameter("saludo2")));
       %>
     </div>
     <div id="personaje3" class="personaje">
