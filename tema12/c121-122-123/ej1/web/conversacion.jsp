@@ -63,7 +63,11 @@
 
     /*********************************************************************/
 
-    
+    var conver1;
+
+    function generarConversacion(){
+      conver1=<%=%>;
+    }
   </script>
 </head>
 <body onload="mostrarPersonajes()">
@@ -85,6 +89,8 @@
       String[] conversacionesAlAzar=new String[3];
 
       int opcionConversacion=(int)(Math.random()*conversacionesAlAzar.length);
+
+      String mensaje1=personaje1.conversacionAleatoria(opcionConversacion, 1);
     %>
 
     <div id="conver1" class="personaje"></div>

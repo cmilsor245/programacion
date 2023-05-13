@@ -61,25 +61,49 @@ public class Personajes{
         case 1:
           switch(identificativo){
             case 1:
-              
+              conversacionGenerada="";
             break;
 
             case 2:
-              
+              conversacionGenerada="";
             break;
 
             case 3: 
-              
+              conversacionGenerada="";
             break;
           }
         break;
 
         case 2:
-          
+          switch(opcionConversacion){
+            case 1:
+              conversacionGenerada="";
+            break;
+
+            case 2:
+              conversacionGenerada="";
+            break;
+
+            case 3: 
+              conversacionGenerada="";
+            break;
+          }
         break;
 
         case 3:
-          
+          switch(opcionConversacion){
+            case 1:
+              conversacionGenerada="";
+            break;
+
+            case 2:
+              conversacionGenerada="";
+            break;
+
+            case 3: 
+              conversacionGenerada="";
+            break;
+          }
         break;
       }
 
