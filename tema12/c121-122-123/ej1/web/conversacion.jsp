@@ -33,7 +33,7 @@
   <div class="personajes-container">
     <div id="personaje1" class="personaje">
       <% 
-        Personajes personaje1 = new Personajes(request.getParameter("nombre1"), "1.png");
+        Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");
         out.print(personaje1.toString(request.getParameter("saludo1")));
       %>
     </div>    
