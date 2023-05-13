@@ -27,46 +27,49 @@
   <script>
     var personaje1, personaje2, personaje3;
 
-function mostrarPersonajes(){
-  personaje1='<%=new Personajes(request.getParameter("nombre1"), "1.png").toString(request.getParameter("saludo1"))%>';
-  personaje2='<%=new Personajes(request.getParameter("nombre2"), "2.png").toString(request.getParameter("saludo2"))%>';
-  personaje3='<%=new Personajes(request.getParameter("nombre3"), "3.png").toString(request.getParameter("saludo3"))%>';
+    function mostrarPersonajes(){
+      personaje1='<%=new Personajes(request.getParameter("nombre1"), "1.png").toString(request.getParameter("saludo1"))%>';
+      personaje2='<%=new Personajes(request.getParameter("nombre2"), "2.png").toString(request.getParameter("saludo2"))%>';
+      personaje3='<%=new Personajes(request.getParameter("nombre3"), "3.png").toString(request.getParameter("saludo3"))%>';
 
-  setTimeout(function(){
-    var personaje1Element=document.getElementById("personaje1");
-    personaje1Element.innerHTML=personaje1;
-    personaje1Element.classList.add("fade-in");
-  }, 1000);
+      setTimeout(function(){
+        var personaje1Element=document.getElementById("personaje1");
+        personaje1Element.innerHTML=personaje1;
+        personaje1Element.classList.add("fade-in");
+      }, 1000);
 
-  setTimeout(function(){
-    var personaje2Element=document.getElementById("personaje2");
-    personaje2Element.innerHTML=personaje2;
-    personaje2Element.classList.add("fade-in");
-  }, 2500);
+      setTimeout(function(){
+        var personaje2Element=document.getElementById("personaje2");
+        personaje2Element.innerHTML=personaje2;
+        personaje2Element.classList.add("fade-in");
+      }, 2500);
 
-  setTimeout(function(){
-    var personaje3Element=document.getElementById("personaje3");
-    personaje3Element.innerHTML=personaje3;
-    personaje3Element.classList.add("fade-in");
-  }, 3500);
+      setTimeout(function(){
+        var personaje3Element=document.getElementById("personaje3");
+        personaje3Element.innerHTML=personaje3;
+        personaje3Element.classList.add("fade-in");
+      }, 3500);
 
-  setTimeout(cambiarSaludo, 5000);
+      setTimeout(cambiarSaludo, 5000);
 
-  setTimeout(function(){
-    var personajes=document.querySelectorAll(".fade-in");
+      setTimeout(function(){
+        var personajes=document.querySelectorAll(".fade-in");
 
-    personajes.forEach(function(personaje){
-      personaje.classList.remove("fade-in");
-    });
-  }, 4500);
-}
-
+        personajes.forEach(function(personaje){
+          personaje.classList.remove("fade-in");
+        });
+      }, 4500);
+    }
   </script>
 </head>
 <body onload="mostrarPersonajes()">
   <h1>CONVERSACIÓN</h1>
 
   <hr>
+
+  <%
+
+  %>
 
   <div class="personajes-container">
     <div id="personaje1" class="personaje">
