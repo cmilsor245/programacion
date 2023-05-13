@@ -61,7 +61,7 @@ public class Personajes{
         case 1:
           switch(identificativo){
             case 1:
-              conversacionGenerada="<div>¿Cómo vosotros por aquí?</div>";
+              conversacionGenerada="<div>¿Cómo vosotros por aquí?</div><div>esta línea va debajo</div>";
             break;
 
             case 2:

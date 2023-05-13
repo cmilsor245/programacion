@@ -43,20 +43,21 @@
 
       /**********************************/
 
-      var opcionConversacion=Math.floor(Math.random()*3)+1;
+      //! mi intención con este código era generar el id de la conversación a utilizar aleatoriamente y que se mostrasen los mensajes pasado un tiempo determinado (con timeout, que no está implementado todavía), pero tras probar muchas formas de hacerlo no consigo hacer lo que quiero
+        /* var opcionConversacion=Math.floor(Math.random()*3)+1;
 
-      var conver1="<%personaje1.conversacionAleatoria("+opcionConversacion+", 1);%>";
-      var conver2="<%personaje2.conversacionAleatoria("+opcionConversacion+", 2);%>";
-      var conver3="<%personaje3.conversacionAleatoria("+opcionConversacion+", 3);%>";
+        var conver1="<%personaje1.conversacionAleatoria("+opcionConversacion+", 1);%>";
+        var conver2="<%personaje2.conversacionAleatoria("+opcionConversacion+", 2);%>";
+        var conver3="<%personaje3.conversacionAleatoria("+opcionConversacion+", 3);%>";
 
-      var conver1Element=document.getElementById("conver1");
-      conver1Element.innerHTML=conver1;
+        var conver1Element=document.getElementById("conver1");
+        conver1Element.innerHTML=conver1;
 
-      var conver2Element=document.getElementById("conver2");
-      conver2Element.innerHTML=conver2;
+        var conver2Element=document.getElementById("conver2");
+        conver2Element.innerHTML=conver2;
 
-      var conver3Element=document.getElementById("conver3");
-      conver3Element.innerHTML=conver3;
+        var conver3Element=document.getElementById("conver3");
+        conver3Element.innerHTML=conver3; */
     }
   </script>
 </head>
@@ -72,7 +73,13 @@
   </div>
 
   <div class="personajes-container">
-    <div id="conver1" class="personaje"></div>
+    <div id="conver1" class="personaje">
+      <%
+        int opcionConversacion=(int)(Math.random()*3+1);
+
+        
+      %>
+    </div>
     <div id="conver2" class="personaje"></div>
     <div id="conver3" class="personaje"></div>
   </div>
