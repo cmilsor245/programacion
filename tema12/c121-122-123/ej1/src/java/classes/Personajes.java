@@ -30,8 +30,23 @@ public class Personajes{
       return imagen;
     }
 
-    @Override
-      public String toString(){
-        return "<img src=\""+imagen+"\" width=\"250\">Hola, soy "+nombre+"<br>";
+    public String toString(int opcion){
+      String saludo="";
+
+      switch(opcion){
+        case 1:
+          saludo="";
+        break;
+
+        case 2:
+          saludo="";
+        break;
+
+        case 3:
+          saludo="";
+        break;
       }
+
+      return saludo;
+    }
 }
