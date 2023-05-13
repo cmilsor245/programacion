@@ -47,9 +47,24 @@
   <hr>
 
   <div class="personajes-container">
-    <div id="personaje1" class="personaje"></div>
-    <div id="personaje2" class="personaje"></div>
-    <div id="personaje3" class="personaje"></div>
+    <div id="personaje1" class="personaje">
+      <% 
+        Personajes personaje1 = new Personajes(request.getParameter("nombre1"), "1.png");
+        out.print(personaje1.toString(request.getParameter("saludo1")));
+      %>
+    </div>    
+    <div id="personaje2" class="personaje">
+      <%
+        Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
+        out.print(personaje2.toString(request.getParameter("saludo")));
+      %>
+    </div>
+    <div id="personaje3" class="personaje">
+      <%
+        Personajes personaje3=new Personajes(request.getParameter("nombre3"), "3.png");
+        out.print(personaje3.toString(request.getParameter("saludo3")));
+      %>
+    </div>
   </div>
 
   <div class="personajes-container">
