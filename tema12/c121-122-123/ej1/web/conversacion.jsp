@@ -43,7 +43,7 @@
 
       /**********************************/
 
-      var opcionConversacion=parseInt('<%Math.floor(Math.random()*3);%>');
+      var opcionConversacion=parseInt('<%(int)(Math.random()*3)%>');
 
       var conver1="<%personaje1.conversacionAleatoria("+opcionConversacion+", 1);%>";
       var conver2="<%personaje2.conversacionAleatoria("+opcionConversacion+", 2);%>";
