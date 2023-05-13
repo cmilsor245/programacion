@@ -67,10 +67,6 @@
 
   <hr>
 
-  <%
-
-  %>
-
   <div class="personajes-container">
     <div id="personaje1" class="personaje">
       <%Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");%>
@@ -79,5 +75,13 @@
     <div id="personaje2" class="personaje"></div>
     <div id="personaje3" class="personaje"></div>
   </div>
+
+  <%
+    String[] conversacionesAlAzar=new String[3];
+
+    int opcionConversacion=(int)(Math.random()*conversacionesAlAzar.length);
+
+    
+  %>
 </body>
 </html>
