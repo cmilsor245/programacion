@@ -40,6 +40,23 @@
 
       var personaje3Element=document.getElementById("personaje3");
       personaje3Element.innerHTML=personaje3;
+
+      /**********************************/
+
+      var conver1, conver2, conver3;
+
+      conver1="";
+      conver2="";
+      conver3="";
+
+      var conver1Element=document.getElementById("conver1");
+      conver1Element.innerHTML=conver1;
+
+      var conver2Element=document.getElementById("conver2");
+      conver2Element.innerHTML=conver2;
+
+      var conver3Element=document.getElementById("conver3");
+      conver3Element.innerHTML=conver3;
     }
   </script>
 </head>
