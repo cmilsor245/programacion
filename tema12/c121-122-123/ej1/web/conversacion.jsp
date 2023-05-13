@@ -63,10 +63,16 @@
 
     /*********************************************************************/
 
-    var conver1=<%=opcionConversacion%>;;
+    var opcion='<%=opcionConversacion%>';
 
     function generarConversacion(){
-      
+      var mensaje1='<%=personaje1.conversacionAleatoria(opcion, 1)%>';
+
+      setTimeout(function(){
+        var conver1Element=document.getElementById("conver1");
+        conver1Element.innerHTML=mensaje1;
+        conver1Element.classList.add("fade-in");
+      }, 1000);
     }
   </script>
 </head>
