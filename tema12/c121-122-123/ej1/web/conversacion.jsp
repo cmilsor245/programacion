@@ -50,17 +50,5 @@
       %>
     </div>
   </div>
-
-  <div class="personajes-container">
-    <div id="conver1" class="personaje">
-      <%
-        int opcionConversacion=(int)(Math.random()*3+1);
-
-        personaje1.conversacionAleatoria(opcionConversacion, 1);
-      %>
-    </div>
-    <div id="conver2" class="personaje"></div>
-    <div id="conver3" class="personaje"></div>
-  </div>
 </body>
 </html>
