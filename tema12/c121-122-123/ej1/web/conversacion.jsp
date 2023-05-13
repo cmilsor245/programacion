@@ -13,7 +13,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="conversacion.css">
   <style>
-    .personajes-container{
+    .personajes-container, .saludos-container{
       display: flex;
     }
 
@@ -48,6 +48,10 @@
         Personajes personaje3=new Personajes(request.getParameter("nombre3"), "3.png");
         out.print(personaje3.toString(request.getParameter("saludo3")));
       %>
+    </div>
+
+    <div class="saludos-container">
+      <div id="saludo1" class="personaje"></div>
     </div>
   </div>
 </body>
