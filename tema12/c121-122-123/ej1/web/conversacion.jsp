@@ -28,9 +28,9 @@
     var personaje1, personaje2, personaje3;
 
     function mostrarPersonajes(){
-      personaje1='<%=new Personajes(request.getParameter("nombre1"), "1.png").toString(request.getParameter("saludo1"))%>';
-      personaje2='<%=new Personajes(request.getParameter("nombre2"), "2.png").toString(request.getParameter("saludo2"))%>';
-      personaje3='<%=new Personajes(request.getParameter("nombre3"), "3.png").toString(request.getParameter("saludo3"))%>';
+      personaje1='<% Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png"); %>';
+      personaje2='<% Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png"); %>';
+      personaje3='<% Personajes personaje3=new Personajes(request.getParameter("nombre3"), "3.png"); %>';
 
       var personaje1Element=document.getElementById("personaje1");
       personaje1Element.innerHTML=personaje1;
@@ -43,11 +43,11 @@
 
       /**********************************/
 
-      var conver1, conver2, conver3;
-
-      conver1="";
-      conver2="";
-      conver3="";
+      var opcionConversacion='<%= Math.floor(Math.random()*3) %>';
+      
+      var conver1='<%=personaje1.conversaionAleatoria("'+opcionConversacion+'", 1)%>';
+      var conver2='<%=personaje1.conversaionAleatoria("'+opcionConversacion+'", 1)%>';
+      var conver3='<%=personaje1.conversaionAleatoria("'+opcionConversacion+'", 1)%>';
 
       var conver1Element=document.getElementById("conver1");
       conver1Element.innerHTML=conver1;
