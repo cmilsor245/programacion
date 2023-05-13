@@ -28,39 +28,39 @@
       <p>Selecciona una presentación para cada personaje:</p>
 
       <fieldset>
-        <input type="radio" name="saludo1" id="saludo1-1" value="Hola">
+        <input type="radio" name="saludo1" id="saludo1-1" value="1">
         <label for="saludo1-1">1</label>
 
-        <input type="radio" name="saludo1" id="saludo1-2" value="Buenos días">
+        <input type="radio" name="saludo1" id="saludo1-2" value="2">
         <label for="saludo1-2">2</label>
 
-        <input type="radio" name="saludo1" id="saludo1-3" value="Buenas tardes">
+        <input type="radio" name="saludo1" id="saludo1-3" value="3">
         <label for="saludo1-3">3</label>
       </fieldset>
 
       <br><br>
 
       <fieldset>
-        <input type="radio" name="saludo2" id="saludo2-1" value="Hola">
+        <input type="radio" name="saludo2" id="saludo2-1" value="1">
         <label for="saludo2-1">1</label>
 
-        <input type="radio" name="saludo2" id="saludo2-2" value="Buenos días">
+        <input type="radio" name="saludo2" id="saludo2-2" value="2">
         <label for="saludo2-2">2</label>
 
-        <input type="radio" name="saludo2" id="saludo2-3" value="Buenas tardes">
+        <input type="radio" name="saludo2" id="saludo2-3" value="3">
         <label for="saludo2-3">3</label>
       </fieldset>
 
       <br><br>
 
       <fieldset>
-        <input type="radio" name="saludo3" id="saludo3-1" value="Hola">
+        <input type="radio" name="saludo3" id="saludo3-1" value="1">
         <label for="saludo3-1">1</label>
 
-        <input type="radio" name="saludo3" id="saludo3-2" value="Buenos días">
+        <input type="radio" name="saludo3" id="saludo3-2" value="2">
         <label for="saludo3-2">2</label>
 
-        <input type="radio" name="saludo3" id="saludo3-3" value="Buenas tardes">
+        <input type="radio" name="saludo3" id="saludo3-3" value="3">
         <label for="saludo3-3">3</label>
       </fieldset>
 

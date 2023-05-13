@@ -30,20 +30,20 @@ public class Personajes{
       return imagen;
     }
 
-    public String toString(int opcion){
+    public String toString(String opcion){
       String saludo="";
 
       switch(opcion){
-        case 1:
-          saludo="";
+        case "1":
+          saludo="<img src=\""+imagen+"\" width=\"250\">¡Hola! Soy "+nombre+".";
         break;
 
-        case 2:
-          saludo="";
+        case "2":
+          saludo="<img src=\""+imagen+"\" width=\"250\">¡Saludos! Mi nombre es "+nombre+".";
         break;
 
-        case 3:
-          saludo="";
+        case "3":
+          saludo="<img src=\""+imagen+"\" width=\"250\">¡Encantado de conocerte! Yo soy "+nombre+".";
         break;
       }
 
