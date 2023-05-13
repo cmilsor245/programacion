@@ -17,14 +17,10 @@
       display: flex;
     }
 
-    .personaje {
+    .personaje{
       flex: 1;
       max-width: 33.3333%;
       margin-right: 10px;
-    }
-
-    .personaje:last-child{
-      margin-right: 0;
     }
   </style>
   <title>EJERCICIO 1</title>
