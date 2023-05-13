@@ -13,7 +13,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="conversacion.css">
   <style>
-    .personajes-container{
+    .personajes-container, .conversacion-container{
       display: flex;
     }
 
@@ -60,6 +60,10 @@
         });
       }, 4500);
     }
+
+    /*********************************************************************/
+
+    
   </script>
 </head>
 <body onload="mostrarPersonajes()">
@@ -76,12 +80,14 @@
     <div id="personaje3" class="personaje"></div>
   </div>
 
-  <%
-    String[] conversacionesAlAzar=new String[3];
+  <div class="conversacion-container">
+    <%
+      String[] conversacionesAlAzar=new String[3];
 
-    int opcionConversacion=(int)(Math.random()*conversacionesAlAzar.length);
+      int opcionConversacion=(int)(Math.random()*conversacionesAlAzar.length);
+    %>
 
-    
-  %>
+    <div id="conver1" class="personaje"></div>
+  </div>
 </body>
 </html>

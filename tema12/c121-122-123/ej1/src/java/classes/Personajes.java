@@ -30,6 +30,8 @@ public class Personajes{
       return imagen;
     }
 
+    /********************/
+
     public String toString(String opcion){
       String saludo="";
 
@@ -49,6 +51,8 @@ public class Personajes{
 
       return saludo;
     }
+
+    /********************/
 
     public String conversacionAleatoria(int opcionConversacion, int identificativo){
       String conversacionGenerada="";
