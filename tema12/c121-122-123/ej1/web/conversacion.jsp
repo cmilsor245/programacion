@@ -25,6 +25,8 @@
       Personajes personaje3=new Personajes(request.getParameter("nombre3"), "3.png");
 
       out.print(personaje1.toString(request.getParameter("saludo1")));
+      out.print(personaje2.toString(request.getParameter("saludo2")));
+      out.print(personaje3.toString(request.getParameter("saludo3")));
     %>
   </body>
 </html>
