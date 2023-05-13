@@ -13,15 +13,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="conversacion.css">
   <style>
-    .personajes-container {
+    .personajes-container{
       display: flex;
     }
+
     .personaje {
       flex: 1;
       max-width: 33.3333%;
       margin-right: 10px;
     }
-    .personaje:last-child {
+
+    .personaje:last-child{
       margin-right: 0;
     }
   </style>
@@ -69,8 +71,8 @@
 
   <div class="personajes-container">
     <div id="personaje1" class="personaje">
-      <% Personajes personaje1 = new Personajes(request.getParameter("nombre1"), "1.png"); %>
-      <%= personaje1.toString(request.getParameter("saludo1")) %>
+      <%Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");%>
+      <%=personaje1.toString(request.getParameter("saludo1"))%>
     </div>
     <div id="personaje2" class="personaje"></div>
     <div id="personaje3" class="personaje"></div>
