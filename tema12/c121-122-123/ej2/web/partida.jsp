@@ -15,13 +15,51 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>EJERCICIO 2</title>
     <style>
-      .jugador1 {
-        color: rgb(255, 0, 64);
-        font-weight: bold;
+      body{
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        text-align: center;
       }
-      .jugador2 {
-        color: rgb(0, 149, 255);
+
+      h1{
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      .jugador1, .jugador2{
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 4px;
         font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .jugador1{
+        color: #ff0040;
+        background-color: #fcecec;
+        border: 2px solid #ff0040;
+      }
+
+      .jugador2{
+        color: #0095ff;
+        background-color: #e8f5ff;
+        border: 2px solid #0095ff;
+      }
+
+      .empate{
+        color: #666;
+        font-weight: bold;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+
+      img{
+        max-width: 200px;
+        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
     </style>
   </head>
@@ -40,7 +78,7 @@
 
         // determinar ganador de la ronda
           if(jugadaJugador1==jugadaJugador2){
-            out.println("Empate. Ambos jugadores eligieron la misma opción.<br>");
+            out.println("<span class='empate'>Empate. Ambos jugadores eligieron la misma opción.</span><br>");
           }else if((jugadaJugador1==1&&jugadaJugador2==3)||(jugadaJugador1==2&&jugadaJugador2==1)||(jugadaJugador1==3&&jugadaJugador2==2)){
             // jugador 1 gana la ronda
               puntosJugador1++;
