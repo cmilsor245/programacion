@@ -4,7 +4,7 @@
   @info: página donde se genera la conversación
 -->
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@page import="classes.Personajes"%>
 
 <!DOCTYPE html>
@@ -123,8 +123,9 @@
 
     <!--******************************************************************************-->
 
+    <!-- generación aleatoria del identificador de la conversación elegida entre las 3 posibles -->
     <%
-      int conversacionElegida=(int)(Math.random()*3)+1;<!-- elección de conversación aleatoria -->
+      int conversacionElegida=(int)(Math.random()*3)+1;
 
       Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");
       Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
