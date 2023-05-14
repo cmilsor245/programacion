@@ -60,26 +60,59 @@ public class Personajes{
 
     /**************************************************/
 
-    public String conversacionAleatoria(String conversacionElegida, String identificativo){
+    public String conversacionAleatoria(int conversacionElegida, int identificativo){
+      String conver="";
+
       switch(conversacionElegida){
-        case "1":
+        case 1:
           switch(identificativo){
-            case "1":
+            case 1:
+              conver="textaco eh";
+            break;
+
+            case 2:
               
             break;
 
-            case "2":
-            
+            case 3:
+              
+            break;
           }
         break;
 
-        case "2":
-          
+        case 2:
+          switch(identificativo){
+            case 1:
+              conver="textaco eh";
+            break;
+
+            case 2:
+              
+            break;
+
+            case 3:
+              
+            break;
+          }
         break;
 
-        case "3":
-          
+        case 3:
+          switch(identificativo){
+            case 1:
+              conver="textaco eh";
+            break;
+
+            case 2:
+              
+            break;
+
+            case 3:
+              
+            break;
+          }
         break;
       }
+
+      return conver;
     }
 }
