@@ -25,7 +25,7 @@
   </style>
   <title>EJERCICIO 1</title>
 </head>
-<body onload="mostrarPersonajes()">
+<body>
   <h1>CONVERSACIÓN</h1>
 
   <hr>
