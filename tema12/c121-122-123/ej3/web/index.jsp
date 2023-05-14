@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>EJERCICIO 3</title>
   <style>
     table{
@@ -68,11 +68,13 @@
           int alfilCol=(int) (Math.random()*8);
           int caballoFila, caballoCol;
 
-        // asegurarse de que el caballo no se coloque en la misma casilla que el alfil
-          do{
-            caballoFila=(int)(Math.random()*8);
-            caballoCol=(int)(Math.random()*8);
-          }while(caballoFila==alfilFila&&caballoCol==alfilCol);// comprobación de coincidencia de fila y columna de las dos piezas
+          // asegurarse de que el caballo no se coloque en la misma casilla que el alfil
+            do{
+              caballoFila=(int)(Math.random()*8);
+              caballoCol=(int)(Math.random()*8);
+            }while(caballoFila==alfilFila&&caballoCol==alfilCol);// comprobación de coincidencia de fila y columna de las dos piezas
+
+        /*****************************************************************************/
 
         // construir el tablero
           for(int fila=0; fila<8; fila++){
