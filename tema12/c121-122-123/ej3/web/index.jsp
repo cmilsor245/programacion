@@ -12,30 +12,30 @@
   <meta charset="UTF-8">
   <title>EJERCICIO 3</title>
   <style>
-      table{
-        border-collapse: collapse;
-      }
+    table{
+      border-collapse: collapse;
+    }
 
-      td{
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        font-weight: bold;
-      }
+    td{
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-weight: bold;
+    }
 
-      .negra{
-        background-color: #000000;
-        color: #ffffff;
-      }
+    .negra{
+      background-color: #000000;
+      color: #ffffff;
+    }
 
-      .blanca{
-        background-color: #ffffff;
-        color: #000000;
-      }
+    .blanca{
+      background-color: #ffffff;
+      color: #000000;
+    }
 
-      .piece{
-        font-size: 30px;
-      }
+    .piece{
+      font-size: 30px;
+    }
   </style>
 </head>
 <body>
