@@ -92,10 +92,10 @@
 
       // determinar ganador de la partida
         if(puntosJugador1==5){
-          out.println("<h1 class='jugador1'>"+request.getParameter("nombre1")+" gana la partida!</h1><br>");
+          out.println("<h1 class='jugador1'>¡"+request.getParameter("nombre1")+" gana la partida!</h1><br>");
           out.println(jugador1.mostrarImagen()+"<br>");
         }else{
-          out.println("<h1 class='jugador2'>"+request.getParameter("nombre2")+" gana la partida!</h1><br>");
+          out.println("<h1 class='jugador2'>¡"+request.getParameter("nombre2")+" gana la partida!</h1><br>");
           out.println(jugador2.mostrarImagen()+"<br>");
         }
     %>
