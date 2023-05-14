@@ -37,11 +37,11 @@ public class Personajes{
 
       switch(opcion){
         case "1":
-          saludo="<div><img src=\""+imagen+"\" width=\"250\"></div>"+ "<div>¡Hola! Soy "+nombre+".</div>";
+          saludo="<div><img src=\""+imagen+"\" width=\"250\"></div>"+"<div>¡Hola! Soy "+nombre+".</div>";
         break;
 
         case "2":
-          saludo="<div><img src=\""+imagen+"\" width=\"250\"></div>"+ "<div>¡Saludos! Mi nombre es "+nombre+".</div>";
+          saludo="<div><img src=\""+imagen+"\" width=\"250\"></div>"+"<div>¡Saludos! Mi nombre es "+nombre+".</div>";
         break;
 
         case "3":
