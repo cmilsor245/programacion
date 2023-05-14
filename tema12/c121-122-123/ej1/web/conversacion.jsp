@@ -124,11 +124,14 @@
     <!--******************************************************************************-->
 
     <script>
+      var conversacionElegida=Math.floor(Math.random()*3)+1;
+
       setTimeout(function(){
         var saludo1Element=document.getElementById('saludo1');
-        saludo1Element.innerHTML='<% out.print("texto de ejemplo"); %>';
+        saludo1Element.innerHTML='<% out.print(personaje1.conversacionAleatoria('+conversacionElegida+', 1)); %>';
         setTimeout(function(){
           saludo1Element.classList.add('blink-animation');
+
           setTimeout(function(){
             saludo1Element.classList.remove('blink-animation');
           }, 500);
