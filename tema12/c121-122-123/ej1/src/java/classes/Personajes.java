@@ -57,4 +57,10 @@ public class Personajes{
 
       return saludo;
     }
+
+    /**************************************************/
+
+    public String conversacionAleatoria(String conversacionElegida, String identificativo){
+      
+    }
 }
