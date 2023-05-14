@@ -67,7 +67,7 @@ public class Personajes{
         case 1:
           switch(identificativo){
             case 1:
-              conver="¿Cómo vosotros por aquí?";
+              conver="¿Qué hacen unos viajeros como vosotros por aquí?";
             break;
 
             case 2:
@@ -83,15 +83,15 @@ public class Personajes{
         case 2:
           switch(identificativo){
             case 1:
-              conver="";
+              conver="¿¿Buscáis algo?";
             break;
 
             case 2:
-              conver="";
+              conver="En realidad... sí. Necesitamos algo de comida.";
             break;
 
             case 3:
-              conver="";
+              conver="¿Sabes de algún lugar donde vendan?";
             break;
           }
         break;
@@ -99,15 +99,73 @@ public class Personajes{
         case 3:
           switch(identificativo){
             case 1:
-              conver="";
+              conver="¿No habréis visto un sable de luz por ahí, no? Se me cayó antes.";
             break;
 
             case 2:
-              conver="";
+              conver="La verdad es que no, si vemos algo se lo decimos.";
             break;
 
             case 3:
-              conver="";
+              conver="Sí, no se preocupe.";
+            break;
+          }
+        break;
+      }
+
+      return conver;
+    }
+
+    /**************************************************/
+
+    public String segundoMensaje(int conversacionElegida, int identificativo){
+      String conver="";
+
+      switch(conversacionElegida){
+        case 1:
+          switch(identificativo){
+            case 1:
+              conver="Pues espero que no vengáis a robarme la leche azul de Thala-siren.";
+            break;
+
+            case 2:
+              conver="Solo estamos explorando un mundo nuevo, nada de lo que preocuparse.";
+            break;
+
+            case 3:
+              conver="Yo he venido obligado.";
+            break;
+          }
+        break;
+
+        case 2:
+          switch(identificativo){
+            case 1:
+              conver="La verdad es que no, pero igual las Lanai pueden ayudaros.";
+            break;
+
+            case 2:
+              conver="*No me fío ni un pelo de este tío...*";
+            break;
+
+            case 3:
+              conver="Muchas gracias por su amabilidad.";
+            break;
+          }
+        break;
+
+        case 3:
+          switch(identificativo){
+            case 1:
+              conver="¡Donde estará el dichoso sable!";
+            break;
+
+            case 2:
+              conver="*Lo llevo encima, no le digas nada. ;-)";
+            break;
+
+            case 3:
+              conver="Bueno, nos vamos. ¡Un saludo!";
             break;
           }
         break;

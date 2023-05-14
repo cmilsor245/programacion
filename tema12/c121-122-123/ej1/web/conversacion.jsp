@@ -167,6 +167,44 @@
           }, 500);
         }, 100);
       }, 6000);
+
+      /******************************/
+
+      setTimeout(function(){
+        var saludo1Element=document.getElementById('saludo1');
+        saludo1Element.innerHTML='<%= personaje1.segundoMensaje(conversacionElegida, 1) %>';
+        setTimeout(function(){
+          saludo1Element.classList.add('blink-animation');
+    
+          setTimeout(function(){
+            saludo1Element.classList.remove('blink-animation');
+          }, 500);
+        }, 100);
+      }, 8700);
+
+      setTimeout(function(){
+        var saludo3Element=document.getElementById('saludo3');
+        saludo3Element.innerHTML='<%= personaje3.segundoMensaje(conversacionElegida, 3) %>';
+        setTimeout(function(){
+          saludo3Element.classList.add('blink-animation');
+
+          setTimeout(function(){
+            saludo3Element.classList.remove('blink-animation');
+          }, 500);
+        }, 100);
+      }, 10000);
+
+      setTimeout(function(){
+        var saludo2Element=document.getElementById('saludo2');
+        saludo2Element.innerHTML='<%= personaje2.segundoMensaje(conversacionElegida, 2) %>';
+        setTimeout(function(){
+          saludo2Element.classList.add('blink-animation');
+
+          setTimeout(function(){
+            saludo2Element.classList.remove('blink-animation');
+          }, 500);
+        }, 100);
+      }, 12000);
     </script>
     <title>EJERCICIO 1</title>
   </head>
