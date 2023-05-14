@@ -11,7 +11,7 @@ public class Personajes{
     private String nombre;
     private String imagen;
 
-  /***********************************************/
+  /*****************************************************************************/
 
   // constructor
     public Personajes(String nombre, String imagen){
@@ -19,7 +19,7 @@ public class Personajes{
     this.imagen=imagen;
     }
 
-  /***********************************************/
+  /*****************************************************************************/
 
   // métodos
     public String getNombre(){
@@ -30,22 +30,28 @@ public class Personajes{
       return imagen;
     }
 
-    /********************/
+    /**************************************************/
 
-    public String toString(String opcion){
+    public String mostrarImagen(){
+      return "<div><img src=\""+imagen+"\" width=\"250\"></div>";
+    }
+
+    /**************************************************/
+
+    public String mostrarSaludo(String opcion){
       String saludo="";
 
       switch(opcion){
         case "1":
-          saludo="<div><img src=\""+imagen+"\" width=\"250\"></div>"+"<div>¡Hola! Soy "+nombre+".</div>";
+          saludo="<div class=\"saludo\">¡Hola! Soy "+nombre+".</div>";
         break;
 
         case "2":
-          saludo="<div><img src=\""+imagen+"\" width=\"250\"></div>"+"<div>¡Saludos! Mi nombre es "+nombre+".</div>";
+          saludo="<div class=\"saludo\">¡Saludos! Mi nombre es "+nombre+".</div>";
         break;
 
         case "3":
-          saludo="<div><img src=\""+imagen+"\" width=\"250\"></div>"+"<div>¡Encantado de conocerte! Yo soy "+nombre+".</div>";
+          saludo="<div class=\"saludo\">¡Encantado de conocerte! Yo soy "+nombre+".</div>";
         break;
       }
 

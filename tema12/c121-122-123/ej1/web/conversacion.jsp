@@ -13,11 +13,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="conversacion.css">
   <style>
-    .personajes-container, .saludos-container{
+    .imagenes-container, .saludos-container{
       display: flex;
     }
 
-    .personaje{
+    .imagenPersonaje, .saludoPersonaje{
       flex: 1;
       max-width: 33.3333%;
       margin-right: 10px;
@@ -30,28 +30,42 @@
 
   <hr>
 
-  <div class="personajes-container">
-    <div id="personaje1" class="personaje">
+  <div class="imagenes-container">
+    <div class="imagenPersonaje">
       <% 
         Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");
-        out.print(personaje1.toString(request.getParameter("saludo1")));
+        out.print(personaje1.mostrarImagen());
       %>
     </div>    
-    <div id="personaje2" class="personaje">
+    <div class="imagenPersonaje">
       <%
         Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
-        out.print(personaje2.toString(request.getParameter("saludo2")));
+        out.print(personaje2.mostrarImagen());
       %>
     </div>
-    <div id="personaje3" class="personaje">
+    <div class="imagenPersonaje">
       <%
         Personajes personaje3=new Personajes(request.getParameter("nombre3"), "3.png");
-        out.print(personaje3.toString(request.getParameter("saludo3")));
+        out.print(personaje3.mostrarImagen());
       %>
     </div>
 
     <div class="saludos-container">
-      <div id="saludo1" class="personaje"></div>
+      <div class="saludoPersonaje">
+        <%
+          out.print(personaje1.mostrarSaludo(request.getParameter("saludo1")));
+        %>
+      </div>
+      <div class="saludoPersonaje">
+        <%
+          out.print(personaje2.mostrarSaludo(request.getParameter("saludo2")));
+        %>
+      </div>
+      <div class="saludoPersonaje">
+        <%
+          out.print(personaje3.mostrarSaludo(request.getParameter("saludo3")));
+        %>
+      </div>
     </div>
   </div>
 </body>
