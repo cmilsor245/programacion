@@ -40,7 +40,8 @@
         background-color: #fce8cd;
         color: #7f5624;
         padding: 12px;
-        border-radius: 8px;
+        border: 2px solid rgb(255, 217, 0);
+        border-radius: 5px;
         font-family: "Comic Sans MS", cursive;
         font-size: 20px;
         font-weight: bold;
@@ -64,7 +65,8 @@
         background-color: #e2f0cb;
         color: #40660d;
         padding: 14px;
-        border-radius: 12px;
+        border: 3px dotted green;
+        border-radius: 18px;
         font-family: "Courier New", monospace;
         font-size: 22px;
         font-weight: normal;
@@ -88,7 +90,8 @@
         background-color: #d2e4f7;
         color: #1d428a;
         padding: 16px;
-        border-radius: 10px;
+        border: 3px dashed blue;
+        border-radius: 15px;
         font-family: "Verdana", sans-serif;
         font-size: 18px;
         font-weight: bold;
