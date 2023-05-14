@@ -12,6 +12,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="conversacion.css">
+
+    <!--******************************************************************************-->
+
     <style>/* he tenido que meter todo este css en el propio archivo jsp porque, por alguna razón, no me lo reconoce si lo escribo en el archivo css externo donde sí me aplica el código que hay escrito ya */
       .imagenes-container, .saludos-container{
         display: flex;
@@ -102,7 +105,36 @@
         border-width: 0 14px 14px 14px;
         border-color: transparent transparent #d2e4f7 transparent;
       }
+
+      @keyframes blink{
+        0%{
+          background-color: inherit;
+        }50%{
+          background-color: red;
+        }100%{
+          background-color: inherit;
+        }
+      }
+
+      .blink-animation{
+        animation: blink 0.5s;
+      }
     </style>
+
+    <!--******************************************************************************-->
+
+    <script>
+      setTimeout(function(){
+        var saludo1Element=document.getElementById('saludo1');
+        saludo1Element.innerHTML='<% out.print("texto de ejemplo"); %>';
+        setTimeout(function(){
+          saludo1Element.classList.add('blink-animation');
+          setTimeout(function(){
+            saludo1Element.classList.remove('blink-animation');
+          }, 500);
+        }, 100);
+      }, 5000);
+    </script>
     <title>EJERCICIO 1</title>
   </head>
   <body>
@@ -114,19 +146,19 @@
       <div class="imagenes-container">
         <div class="imagenPersonaje">
           <% 
-            Personajes personaje1 = new Personajes(request.getParameter("nombre1"), "1.png");
+            Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");
             out.print(personaje1.mostrarImagen());
           %>
         </div>    
         <div class="imagenPersonaje">
           <% 
-            Personajes personaje2 = new Personajes(request.getParameter("nombre2"), "2.png");
+            Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
             out.print(personaje2.mostrarImagen());
           %>
         </div>
         <div class="imagenPersonaje">
           <% 
-            Personajes personaje3 = new Personajes(request.getParameter("nombre3"), "3.png");
+            Personajes personaje3=new Personajes(request.getParameter("nombre3"), "3.png");
             out.print(personaje3.mostrarImagen());
           %>
         </div>
