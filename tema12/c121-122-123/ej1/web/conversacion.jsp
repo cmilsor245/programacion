@@ -12,7 +12,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="conversacion.css">
-    <style>
+    <style>/* he tenido que meter todo este css en el propio archivo jsp porque, por alguna razón, no me lo reconoce si lo escribo en el archivo css externo donde sí me aplica el código que hay escrito ya */
       .imagenes-container, .saludos-container{
         display: flex;
       }
