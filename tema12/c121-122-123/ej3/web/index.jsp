@@ -77,7 +77,7 @@
         // construir el tablero
           for(int fila=0; fila<8; fila++){
             for(int col=0; col<8; col++){
-              if((fila + col)%2==0){
+              if((fila+col)%2==0){
                 tablero[fila][col]="negra";
               }else{
                 tablero[fila][col]="blanca";
@@ -108,7 +108,7 @@
     <tfoot>
       <tr>
         <th></th>
-        <% for (int i=0; i<8; i++){ %>
+        <% for(int i=0; i<8; i++){ %>
           <th><%= letras[i] %></th>
         <% } %>
       </tr>
