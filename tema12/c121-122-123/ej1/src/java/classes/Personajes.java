@@ -83,7 +83,7 @@ public class Personajes{
         case 2:
           switch(identificativo){
             case 1:
-              conver="¿¿Buscáis algo?";
+              conver="¿Buscáis algo?";
             break;
 
             case 2:
@@ -161,7 +161,7 @@ public class Personajes{
             break;
 
             case 2:
-              conver="*Lo llevo encima, no le digas nada. ;-)";
+              conver="*Lo llevo encima, no le digas nada. ;-)*";
             break;
 
             case 3:
