@@ -61,6 +61,25 @@ public class Personajes{
     /**************************************************/
 
     public String conversacionAleatoria(String conversacionElegida, String identificativo){
-      
+      switch(conversacionElegida){
+        case "1":
+          switch(identificativo){
+            case "1":
+              
+            break;
+
+            case "2":
+            
+          }
+        break;
+
+        case "2":
+          
+        break;
+
+        case "3":
+          
+        break;
+      }
     }
 }
