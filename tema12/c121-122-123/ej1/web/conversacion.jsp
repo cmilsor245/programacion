@@ -123,9 +123,8 @@
 
     <!--******************************************************************************-->
 
-    <!-- generación aleatoria del identificador de la conversación elegida entre las 3 posibles -->
     <%
-      int conversacionElegida=(int)(Math.random()*3)+1;
+      int conversacionElegida=(int)(Math.random()*3)+1;// generación aleatoria del identificador de la conversación elegida entre las 3 posibles
 
       Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");
       Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
