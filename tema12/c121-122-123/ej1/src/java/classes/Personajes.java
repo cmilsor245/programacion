@@ -83,15 +83,15 @@ public class Personajes{
         case 2:
           switch(identificativo){
             case 1:
-              
+              conver="";
             break;
 
             case 2:
-              
+              conver="";
             break;
 
             case 3:
-              
+              conver="";
             break;
           }
         break;
@@ -99,15 +99,15 @@ public class Personajes{
         case 3:
           switch(identificativo){
             case 1:
-              
+              conver="";
             break;
 
             case 2:
-              
+              conver="";
             break;
 
             case 3:
-              
+              conver="";
             break;
           }
         break;

@@ -142,7 +142,31 @@
             saludo1Element.classList.remove('blink-animation');
           }, 500);
         }, 100);
+      }, 3000);
+
+      setTimeout(function(){
+        var saludo2Element=document.getElementById('saludo2');
+        saludo2Element.innerHTML='<%= personaje2.conversacionAleatoria(conversacionElegida, 2) %>';
+        setTimeout(function(){
+          saludo2Element.classList.add('blink-animation');
+
+          setTimeout(function(){
+            saludo2Element.classList.remove('blink-animation');
+          }, 500);
+        }, 100);
       }, 5000);
+
+      setTimeout(function(){
+        var saludo3Element=document.getElementById('saludo3');
+        saludo3Element.innerHTML='<%= personaje3.conversacionAleatoria(conversacionElegida, 3) %>';
+        setTimeout(function(){
+          saludo3Element.classList.add('blink-animation');
+
+          setTimeout(function(){
+            saludo3Element.classList.remove('blink-animation');
+          }, 500);
+        }, 100);
+      }, 6000);
     </script>
     <title>EJERCICIO 1</title>
   </head>
