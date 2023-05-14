@@ -124,7 +124,7 @@
     <!--******************************************************************************-->
 
     <%
-      int conversacionElegida=(int)(Math.random()*3)+1;
+      int conversacionElegida=(int)(Math.random()*3)+1;<!-- elección de conversación aleatoria -->
 
       Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");
       Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
