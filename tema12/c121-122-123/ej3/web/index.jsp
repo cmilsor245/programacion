@@ -72,7 +72,7 @@
           do{
             caballoFila=(int)(Math.random()*8);
             caballoCol=(int)(Math.random()*8);
-          } while(caballoFila==alfilFila&&caballoCol==alfilCol);// comprobación de coincidencia de fila y columna de las dos piezas
+          }while(caballoFila==alfilFila&&caballoCol==alfilCol);// comprobación de coincidencia de fila y columna de las dos piezas
 
         // construir el tablero
           for(int fila=0; fila<8; fila++){
