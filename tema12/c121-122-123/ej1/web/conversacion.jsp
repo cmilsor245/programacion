@@ -125,6 +125,7 @@
 
     <%
       int conversacionElegida=(int)(Math.random()*3)+1;
+
       Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");
       Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
       Personajes personaje3=new Personajes(request.getParameter("nombre3"), "3.png");
@@ -133,7 +134,7 @@
     <script>
       setTimeout(function(){
         var saludo1Element=document.getElementById('saludo1');
-        saludo1Element.innerHTML='<% personaje1.conversacionAleatoria(conversacionElegida, 1); %>';
+        saludo1Element.innerHTML='<%= personaje1.conversacionAleatoria(conversacionElegida, 1) %>';
         setTimeout(function(){
           saludo1Element.classList.add('blink-animation');
     

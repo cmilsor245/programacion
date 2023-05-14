@@ -67,15 +67,15 @@ public class Personajes{
         case 1:
           switch(identificativo){
             case 1:
-              conver="textaco eh";
+              conver="¿Cómo vosotros por aquí?";
             break;
 
             case 2:
-              
+              conver="Pues nada, dando una vuelta por Ahch-To.";
             break;
 
             case 3:
-              
+              conver="Eso mismo.";
             break;
           }
         break;
@@ -83,7 +83,7 @@ public class Personajes{
         case 2:
           switch(identificativo){
             case 1:
-              conver="textaco eh";
+              
             break;
 
             case 2:
@@ -99,7 +99,7 @@ public class Personajes{
         case 3:
           switch(identificativo){
             case 1:
-              conver="textaco eh";
+              
             break;
 
             case 2:
