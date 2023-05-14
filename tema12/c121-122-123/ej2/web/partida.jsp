@@ -65,8 +65,8 @@
   </head>
   <body>
     <%
-      Personajes jugador1=new Personajes("Jugador 1", "1.png");
-      Personajes jugador2=new Personajes("Jugador 2", "2.png");
+      Personajes jugador1=new Personajes(request.getParameter("nombre1"), "1.png");
+      Personajes jugador2=new Personajes(request.getParameter("nombre2"), "2.png");
 
       int puntosJugador1=0;
       int puntosJugador2=0;
@@ -78,24 +78,24 @@
 
         // determinar ganador de la ronda
           if(jugadaJugador1==jugadaJugador2){
-            out.println("<span class='empate'>Empate. Ambos jugadores eligieron la misma opción.</span><br>");
+            out.println("<span class='empate'>Empate. Ambos jugadores han elegido la misma opción.</span><br>");
           }else if((jugadaJugador1==1&&jugadaJugador2==3)||(jugadaJugador1==2&&jugadaJugador2==1)||(jugadaJugador1==3&&jugadaJugador2==2)){
             // jugador 1 gana la ronda
               puntosJugador1++;
-              out.println("<span class='jugador1'>Jugador 1 gana la ronda. Puntos: "+puntosJugador1+"</span><br>");
+              out.println("<span class='jugador1'>"+request.getParameter("nombre1")+" gana la ronda. Puntos: "+puntosJugador1+"</span><br>");
           }else{
             // jugador 2 gana la ronda
               puntosJugador2++;
-              out.println("<span class='jugador2'>Jugador 2 gana la ronda. Puntos: "+puntosJugador2+"</span><br>");
+              out.println("<span class='jugador2'>"+request.getParameter("nombre2")+" gana la ronda. Puntos: "+puntosJugador2+"</span><br>");
           }
       }
 
       // determinar ganador de la partida
         if(puntosJugador1==5){
-          out.println("<h1 class='jugador1'>Jugador 1 gana la partida!</h1><br>");
+          out.println("<h1 class='jugador1'>"+request.getParameter("nombre1")+" gana la partida!</h1><br>");
           out.println(jugador1.mostrarImagen()+"<br>");
         }else{
-          out.println("<h1 class='jugador2'>Jugador 2 gana la partida!</h1><br>");
+          out.println("<h1 class='jugador2'>"+request.getParameter("nombre2")+" gana la partida!</h1><br>");
           out.println(jugador2.mostrarImagen()+"<br>");
         }
     %>
