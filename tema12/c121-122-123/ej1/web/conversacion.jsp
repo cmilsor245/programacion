@@ -30,41 +30,37 @@
 
   <hr>
 
-  <div class="imagenes-container">
-    <div class="imagenPersonaje">
-      <% 
-        Personajes personaje1=new Personajes(request.getParameter("nombre1"), "1.png");
-        out.print(personaje1.mostrarImagen());
-      %>
-    </div>    
-    <div class="imagenPersonaje">
-      <%
-        Personajes personaje2=new Personajes(request.getParameter("nombre2"), "2.png");
-        out.print(personaje2.mostrarImagen());
-      %>
-    </div>
-    <div class="imagenPersonaje">
-      <%
-        Personajes personaje3=new Personajes(request.getParameter("nombre3"), "3.png");
-        out.print(personaje3.mostrarImagen());
-      %>
+  <div class="contenedor-principal">
+    <div class="imagenes-container">
+      <div class="imagenPersonaje">
+        <% 
+          Personajes personaje1 = new Personajes(request.getParameter("nombre1"), "1.png");
+          out.print(personaje1.mostrarImagen());
+        %>
+      </div>    
+      <div class="imagenPersonaje">
+        <% 
+          Personajes personaje2 = new Personajes(request.getParameter("nombre2"), "2.png");
+          out.print(personaje2.mostrarImagen());
+        %>
+      </div>
+      <div class="imagenPersonaje">
+        <% 
+          Personajes personaje3 = new Personajes(request.getParameter("nombre3"), "3.png");
+          out.print(personaje3.mostrarImagen());
+        %>
+      </div>
     </div>
 
     <div class="saludos-container">
       <div class="saludoPersonaje">
-        <%
-          out.print(personaje1.mostrarSaludo(request.getParameter("saludo1")));
-        %>
+        <% out.print(personaje1.mostrarSaludo(request.getParameter("saludo1"))); %>
       </div>
       <div class="saludoPersonaje">
-        <%
-          out.print(personaje2.mostrarSaludo(request.getParameter("saludo2")));
-        %>
+        <% out.print(personaje2.mostrarSaludo(request.getParameter("saludo2"))); %>
       </div>
       <div class="saludoPersonaje">
-        <%
-          out.print(personaje3.mostrarSaludo(request.getParameter("saludo3")));
-        %>
+        <% out.print(personaje3.mostrarSaludo(request.getParameter("saludo3"))); %>
       </div>
     </div>
   </div>
