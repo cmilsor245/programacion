@@ -11,7 +11,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>EJERCICIO 3</title>
+    <title>EJERCICIO 2</title>
     <style>
       body{
         font-family: 'Arial', sans-serif;
