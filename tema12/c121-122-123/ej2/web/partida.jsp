@@ -144,6 +144,7 @@
         window.onload=function(){
           var jugador1={nombre: '<%= request.getParameter("nombre1") %>', imagen: "1.png", puntos: 0};
           var jugador2={nombre: '<%= request.getParameter("nombre2") %>', imagen: "2.png", puntos: 0};
+
           jugarRonda(jugador1, jugador2);
         };
 
@@ -199,7 +200,7 @@
 
         /******************************************/
 
-        // obtener el elemento de la jugada actual para aplicar la transición - !no me funciona, debería mostrar una pequeña animación entre jugada y jugada
+        // obtener el elemento de la jugada actual para aplicar la transición - //! no me funciona, debería mostrar una pequeña animación entre jugada y jugada
           var jugadaActual=resultado.getElementsByClassName('jugada')[0];// el "[0]" devuelve el primer elemento con la clase "jugada", ya que la función "getElementsByClassName" devuelve una lista
           jugadaActual.style.opacity=1;
 
