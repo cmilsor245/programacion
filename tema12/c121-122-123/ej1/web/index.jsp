@@ -22,9 +22,9 @@
     <form method="post" action="conversacion.jsp">
       <p>Introduce el nombre de los 3 personajes:</p>
 
-      <input type="text" autofocus name="nombre1" placeholder="Luke Skywalker">
-      <input type="text" name="nombre2" placeholder="Rey Skywalker">
-      <input type="text" name="nombre3" placeholder="BB-8">
+      <input type="text" autofocus name="nombre1" placeholder="Luke Skywalker" autocomplete="off">
+      <input type="text" name="nombre2" placeholder="Rey Skywalker" autocomplete="off">
+      <input type="text" name="nombre3" placeholder="BB-8" autocomplete="off">
 
       <p>Selecciona una presentación para cada personaje:</p>
 

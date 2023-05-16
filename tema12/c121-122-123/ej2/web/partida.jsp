@@ -1,7 +1,7 @@
 <!--
   @author: Christian Millán Soria
-  @file: index.jsp
-  @info: página principal
+  @file: partida.jsp
+  @info: página donde se ejecuta la partida
 -->
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
