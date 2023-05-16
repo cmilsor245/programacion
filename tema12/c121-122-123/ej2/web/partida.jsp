@@ -14,6 +14,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>EJERCICIO 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
       body{
         font-family: 'Arial', sans-serif;
@@ -80,6 +83,19 @@
         flex-direction: column;
         align-items: center;
         margin-right: 20px;
+      }
+
+      .jugadaEspecifica{
+        font-family: 'Press Start 2P';
+        font-weight: 999;
+        border: 4px dashed rgb(0, 255, 145);
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+
+      #debajo{
+        margin-bottom: 30px;
       }
 
       .imagenJugador{
@@ -163,9 +179,9 @@
         // contenido de la jugada actual
           var jugadaHtml="";
             jugadaHtml+="<div class='jugadaContainer'><img class='imagenJugador' src='"+jugador1.imagen+"'><br>";
-            jugadaHtml+=jugador1.nombre+" ha sacado: "+getJugadaText(jugadaJugador1)+"</div>";
+            jugadaHtml+="<div class='jugadaEspecifica'>"+jugador1.nombre+" ha sacado: "+getJugadaText(jugadaJugador1)+"</div></div>";
             jugadaHtml+="<div class='jugadaContainer'><img class='imagenJugador' src='"+jugador2.imagen+"'><br>";
-            jugadaHtml+=jugador2.nombre+" ha sacado: "+getJugadaText(jugadaJugador2)+"</div>";
+            jugadaHtml+="<div class='jugadaEspecifica' id='debajo'>"+jugador2.nombre+" ha sacado: "+getJugadaText(jugadaJugador2)+"</div></div>";
 
         /******************************************/
 
