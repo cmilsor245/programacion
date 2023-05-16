@@ -59,7 +59,8 @@
 
       img{
         max-width: 200px;
-        margin-top: 20px;
+        margin: 20px auto; /* Centra las imágenes horizontalmente */
+        display: block; /* Añade esta línea para centrar verticalmente las imágenes */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
