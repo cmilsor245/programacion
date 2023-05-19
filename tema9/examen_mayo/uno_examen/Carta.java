@@ -32,28 +32,29 @@ public class Carta{
     /**
       @name: dibujaFila
       @info: dibuja una fila específica
-      @param identificativo: número de la fila a dibujar
+      @param fila: número de la fila a dibujar
       @return fila: fila dibujada
     */
-      public String dibujaFila(int identificativo){
-        String fila="";
+    public String dibujaFila(int fila){
+      String filaDibujada="";
 
-        switch(identificativo){
-          case 1:
-            fila+=color+"/ \\"+RESET+" ";// agrega los caracteres correspondientes a la fila de arriba
-          break;
+      switch (fila){
+        case 1:
+          filaDibujada+=color+"/ \\"+RESET+" ";// agrega los caracteres correspondientes a la fila de arriba
+        break;
 
-          case 2:
-            fila+=" "+color+this.numero+RESET+" ";// agrega el número de la carta a la fila
-          break;
+        case 2:
+          filaDibujada+=color+" "+String.format("%-2s", this.numero)+RESET+" ";// agrega el número de la carta con color y ancho fijo// string.format equivaldría a printf
+        break;
 
-          case 3:
-            fila+=color+"\\ /"+RESET+" ";// agrega los caracteres correspondientes a la fila de abajo
-          break;
-        }
-      
-        return fila;
+        case 3:
+          filaDibujada+=color+"\\ /"+RESET+" ";// agrega los caracteres correspondientes a la fila de abajo
+        break;
       }
+
+      return filaDibujada;
+  }
+
 
     /****************************/
 
