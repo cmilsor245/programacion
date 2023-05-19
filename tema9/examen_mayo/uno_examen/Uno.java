@@ -96,16 +96,54 @@ public class Uno {
   // Recorre la lista de cartas, desordenándolas aleatoriamente
   //-------------------------------------------------------------------------------------------------------------------------------------
 
+  public static void barajarCartas(){
+    int numCartas=cartas.length;
+
+    for(int i=numCartas-1; i>0; i--){
+        int j=(int)(Math.random()*(i+1));
+
+        Carta temp=cartas[i];
+
+        cartas[i]=cartas[j];
+
+        cartas[j]=temp;
+    }
+  }
+
 
   // hayCartasEnMazo
   // Devuelve true si hay alguna carta en la lista que no sea null
   //-------------------------------------------------------------------------------------------------------------------------------------
+
+  public static boolean hayCartasEnMazo(){
+    for(int i=0; i<cartas.length; i++){
+      if(cartas[i]!=null){
+        return true;
+      }
+    }
+
+    return false;
+  }
 
 
   // robaDelMazo
   // Devuelve la primera carta del mazo que no es null, y su lugar en el array lo pone a null, para eliminarla del mazo
   // En el array de cartas irán quedando null a la izquierda, y cartas a la derecha
   //-------------------------------------------------------------------------------------------------------------------------------------
+
+  public static Carta robaDelMazo(){
+    for(int i=0; i<cartas.length; i++){
+      if(cartas[i]!=null){
+        Carta carta=cartas[i];
+
+        cartas[i]=null;
+
+        return carta;
+      }
+    }
+
+    return null;
+  }
   
 
 //=======================================================================================================================================
@@ -149,7 +187,7 @@ public class Uno {
     System.out.print(RESET + "\n ^ \n ");
     for (Carta c : cartas) {
       if (c != null) {
-        System.out.print(c.color + c.numero + RESET);
+        System.out.print(c.getColor() + c.getNumero() + RESET);
       }
     }
     System.out.print(" < Cartas en el mazo \n\n\n");                                                  // 2 Saltos de línea

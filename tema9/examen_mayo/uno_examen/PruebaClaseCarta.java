@@ -33,7 +33,7 @@ public class PruebaClaseCarta {
     cartas[2] = new Carta(1, VERDE);
     cartas[3] = new Carta(0, PURPURA);
 
-       System.out.println("Así es como deben aparecer las 4 cartas:");
+    System.out.println("Así es como deben aparecer las 4 cartas:");
     System.out.print(ROJO + "/ \\" + RESET + " " + VERDE + "/ \\" + RESET + " ");
     System.out.println(VERDE + "/ \\" + RESET + " " + ROJO + "/" + PURPURA+ " " + VERDE + "\\" + RESET + " ");
     System.out.print(ROJO + " 1 " + RESET + " " + VERDE + " 2 " + RESET + " ");
